@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Account Transfers </title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<link href="css/fonts.css" rel="stylesheet">
+<body>
+  <div class="box-contaner">
+    <div class="box--hdr">
+      <div class="passwordInput">
+        <div class="passwordInput--info" id="userInfo">
+          <h1 class="header2-Submit">Transfer</h1>
+          <h3 class="header3-Submit"> Confirm?</h3>
+          <form class='auth' style="text-align: center;" method="post" action="/auth">
+            <h1 class="header-Submit">Digital Bank</h1>
+            <input type="password" name="password" id="password" placeholder="Enter Password (4 digits)" class='password--input'>
+            <input type="button" class="password-Submit" value="Confirm" id="submit">
+          </form>        
+        </div>
+      </div>
+    </div>
+    <div class="transferData" id="data">
+      <div class="data addIncome income-modal-open ">
+        <div class="acctSummary">
+          <div class="acctBalance">
+            <div class="userDataBalance">
+              <span class="dataBalance--label">Transaction completed successfully ✅</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="data transferStatus" id='openModal'>
+        <p type="submit">Return to menu</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script  src="js/script.js"></script>
+</html>
